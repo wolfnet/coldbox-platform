@@ -27,14 +27,15 @@ Description :
 
 	<cfset this.datasource = "coolblog">
 	<cfset this.ormEnabled = "true">
-
+	
 	<cfset this.ormSettings = {
 		logSQL = true,
-		eventhandling = true,
 		dbcreate = "update",
 		secondarycacheenabled = true,
 		cacheProvider = "ehcache",
-		flushAtRequestEnd = false
+		flushAtRequestEnd = false,
+		eventhandling = true,
+		eventHandler = "testmodel.EventHandler"
 	}>
 
 	<!--- <cfset this.ormsettings.eventhandler = "testmodel.EventHandler"> --->

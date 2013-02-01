@@ -13,9 +13,9 @@ your tests.
 	<property name="mxunit.jar" 		value="../../../../mxunit/ant/lib/mxunit-ant.jar" />
 	<property name="mxunit.xsl" 		value="../../../../mxunit/ant/xsl" />
 	<!-- The path to the custom runner in your resources folder from the root of your server: PLEASE CHANGE -->
-	<property name="mxunit.runner"		value="/coldbox/ApplicationTemplates/Simple/test/resources/HttpAntRunner.cfc"/>
-	<property name="test.path"			value="/coldbox/ApplicationTemplates/Simple/test" />
-	<property name="test.cfcpath"		value="coldbox.ApplicationTemplates.Simple.test" />
+	<property name="mxunit.runner"		value="/coldbox/ApplicationTemplates/Advanced/test/resources/HttpAntRunner.cfc"/>
+	<property name="test.path"			value="/coldbox/ApplicationTemplates/Advanced/test" />
+	<property name="test.cfcpath"		value="coldbox.ApplicationTemplates.Advanced.test" />
 	<!-- Reporting Output Directories --> 
 	<property name="report.dir"  		value="test-results" />
 	<property name="junitreport.dir"  	value="${report.dir}/junitreport" />

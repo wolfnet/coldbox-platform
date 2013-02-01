@@ -306,7 +306,7 @@ Description :
 		<cfset var results = "">
 
 		<!--- Verify Message Type --->
-		<cfif isValidMessageType(arguments.tupe)>
+		<cfif isValidMessageType(arguments.type)>
 			<!--- Populate message struct --->
 			<cfset msgStruct.type = arguments.type>
 			<cfset msgStruct.message = arguments.message>
