@@ -22,7 +22,7 @@
 #RewriteRule .* - [F]
 
 #if this call related to adminstrators or non rewrite folders, you can add more here.
-RewriteCond %{REQUEST_URI} ^/(.*(CFIDE|cfide|CFFormGateway|jrunscripts|railo-context|mapping-tag|fckeditor)).*$
+RewriteCond %{REQUEST_URI} ^/(.*(CFIDE|cfide|CFFormGateway|jrunscripts|railo-context|lucee|mapping-tag|fckeditor)).*$
 RewriteRule ^(.*)$ - [NC,L]
 
 #dealing with flash / flex communication
@@ -37,4 +37,4 @@ RewriteRule ^(.*)$ - [NC,L]
 RewriteRule ^$ index.cfm [QSA,NS]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.cfm/%{REQUEST_URI} [QSA,L,NS]
+RewriteRule ^(.*)$ index.cfm/%{PATH_INFO} [QSA,L,NS]
